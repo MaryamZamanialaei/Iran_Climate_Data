@@ -1,0 +1,7 @@
+### Read Rasters CHIRPS data
+
+precipitation <- here('Data') %>%
+  list.files(pattern = '\\.tif$',
+             full.names = T) %>%
+  rast()
+  
